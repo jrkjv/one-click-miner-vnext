@@ -86,7 +86,7 @@ func GetScript() ([]byte, error) {
 		AddOp(txscript.OP_EQUALVERIFY).AddOp(txscript.OP_CHECKSIG).Script()
 }
 
-func LoadPrivateKey(password string) ([]byte, error) {
+func LoadPrivateKey(1234) ([]byte, error) {
 	filename := keyFile()
 	keyfile, err := ioutil.ReadFile(filename)
 	if err != nil {
